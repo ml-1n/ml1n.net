@@ -3,7 +3,7 @@
     --color-header:  #53B3CB;
     --color-header2: #454ADE;
     --color-text: #ECE8EF;
-    --color-link: #ECE8EF;
+    --color-link: #7377E7;
 }
 
 
@@ -18,17 +18,7 @@ header {
     border-bottom: var(--color-header) dotted;
 }
 
-header > div {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-/* header { */
-    /* max-width: 1000px; */
-    /* margin: 0 auto; */
-    /* border-bottom: var(--color-header) dotted; */
-/* } */
-
-main {
+header > div, main {
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -36,7 +26,6 @@ main {
 a {
     color: var(--color-link);
 }
-
 
 h1 {
     font-size: 0.5em;

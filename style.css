@@ -1,61 +1,73 @@
 :root {
     --color-background: #141414;
     --color-header:  #53B3CB;
-    --color-header2: #454ADE;
+    --color-header-alt: #454ADE;
     --color-text: #ECE8EF;
     --color-link: #7377E7;
 }
 
-
 body {
     background: var(--color-background);
     font-family: monospace;
+    
     font-size: 1.2em;
     color: var(--color-text);
 }
 
 header {
-    border-bottom: var(--color-header) dotted;
+    border-bottom: var(--color-header) dashed;
 }
 
-header > div, main {
+header > div > h1 {
+    color: var(--color-header);
+}
+
+header > div > h2 {
+    color: var(--color-text);
+}
+
+header > div {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    position: relative;
+    left: -2em;
+}
+
+
+main {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-a {
-    color: var(--color-link);
-}
-
-h1 {
-    font-size: 0.5em;
-
-}
-
-h1, h2, h3 {
+main > h2 {
     color: var(--color-header);
 }
 
-h3::first-letter {
-    color: var(--color-header2);
+main > h2::first-letter {
+    color: var(--color-header-alt);
 }
 
-h2 {
-    color: var(--color-header2);
-}
 
-h3 {
-    font-size: 1.5em;
+
+a {
+    color: var(--color-link);
 }
 
 ul {
     list-style: none;
 }
 
-ul > li::before {
-    content: "> ";
+ul > li::after {
+    content: "/";
     font-size: 1.2em;
     color: var(--color-header);
 }
+
+
+
+
+
+
 
 

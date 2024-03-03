@@ -29,15 +29,15 @@ header > div > h2 {
 header > div {
     max-width: 1024px;
     margin: 0 auto;
-
-    position: relative;
-    left: -2em;
 }
 
 
 main {
     max-width: 1024px;
     margin: 0 auto;
+
+    position: relative;
+    left: 2em;
 }
 
 main > h2 {
@@ -47,7 +47,6 @@ main > h2 {
 main > h2::first-letter {
     color: var(--color-header-alt);
 }
-
 
 
 a {
